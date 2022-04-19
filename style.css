@@ -121,12 +121,17 @@ main{
     display: flex;
     align-items:center;
     gap: 8px;
-    margin: 1%;
+    /* margin: 1%; */
 }
-
+.logos-set div{
+    display: flex;
+}
 .division1 button{
     width: 33%;
     height: auto;
+}
+.division1>div{
+    text-align: justify;
 }
 
 .division2, .division1{
@@ -166,12 +171,16 @@ b{
 }
 
 
+
 @media only screen and (max-width: 480px){
+    .box{
+        padding: 1%;
+    }
     nav{
         flex-wrap:wrap;
     }
     nav div{
-        margin: 15px;
+        margin-top: 10px;
     }
     main, .division1{
         flex-wrap:wrap;
@@ -179,4 +188,15 @@ b{
         text-align: center;
         align-items: center;
     }
+    .logos-set{
+        display: flex;
+        flex-direction:column-reverse;
+        margin-top: 100px;
+    }
+   .head-center{
+       flex-wrap: wrap;
+       gap: 10px;
+       justify-content: center;
+   }
+
 }
